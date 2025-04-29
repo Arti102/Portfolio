@@ -1,1 +1,311 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arti Kanwal | Software Engineer & Data Analyst</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-backdrop-filter: blur(5px);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+        .skill-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800">Arti Kanwal</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 transition">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-500 transition">Skills</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-500 transition">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-500 transition">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-500 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="gradient-text">Arti Kanwal</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Software Engineer & Data Analyst</h2>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Data Analyst with experience in Python, SQL, Excel, and dashboard development. 
+                    Passionate about transforming data into actionable insights.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">Contact Me</a>
+                    <a href="#projects" class="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition">View Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-100">
+                    <img src="1745762714655 (1).jpg" 
+                         alt="Arti Kanwal" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-gray-600 mb-6">
+                I'm a detail-oriented Data Analyst with expertise in Python, SQL, and data visualization tools. 
+                I specialize in transforming complex data into meaningful insights that drive business decisions.
+            </p>
+            <p class="text-gray-600">
+                With a strong foundation in software engineering and data analysis, I bring a unique perspective 
+                to solving problems through data-driven approaches.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-50">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Programming Languages -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-code text-blue-500 text-2xl mr-3"></i>
+                    <h3 class="text-xl font-semibold">Programming</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                    <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Java</span>
+                    <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">C</span>
+                    <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Structures and algorithm</span>
+                    <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">VBA</span>
+                </div>
+            </div>
+            
+            <!-- Data Science -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-chart-line text-blue-500 text-2xl mr-3"></i>
+                    <h3 class="text-xl font-semibold">Data Science</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Pandas</span>
+                    <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">NumPy</span>
+                    <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Selenium</span>
+                    <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Beautiful Soup</span>
+                    <span class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Django</span>
+                </div>
+            </div>
+            
+            <!-- Databases & Tools -->
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-database text-blue-500 text-2xl mr-3"></i>
+                    <h3 class="text-xl font-semibold">Databases & Tools</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Hive SQL</span>
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Git</span>
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Power BI</span>
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Tableau</span>
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Advanced Excel</span>
+                    <span class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">WordPress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Work Experience</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-800">Data Analyst</h3>
+                <p class="text-gray-600">Maruti Suzuki India Limited | Dec 2023 - Sep 2024</p>
+                <ul class="mt-4 space-y-2 text-gray-600 list-disc pl-5">
+                    <li>Built interactive dashboards using Power BI for 450+ employees</li>
+                    <li>Automated 300+ monthly email reminders with Python, reducing manual effort by 90%</li>
+                    <li>Analyzed 1M+ records to reduce operational delays by 15%</li>
+                    <li>Improved workflow efficiency by 25% through advanced Excel reporting</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-50">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Projects</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm card-hover transition">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">T20 Cricket Data Analytics</h3>
+                <p class="text-gray-600 mb-4">Power BI, Puppeteer, Python</p>
+                <p class="text-gray-600 mb-4">
+                    Scraped player performance data from ESPNcricinfo using Puppeteer, cleaned and transformed data with Pandas, 
+                    and created dynamic Power BI dashboards with DAX measures.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Puppeteer</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Power BI</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Pandas</span>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm card-hover transition">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Property Data Scraper</h3>
+                <p class="text-gray-600 mb-4">Django, Selenium, MongoDB</p>
+                <p class="text-gray-600 mb-4">
+                    Built a web scraper to extract property details from Housing.com, scheduled to run twice daily with Django cron jobs, 
+                    storing data in MongoDB for analysis and visualization.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Django</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Selenium</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">MongoDB</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Beautiful Soup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Education</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-gray-800">Master of Computer Applications (MCA)</h3>
+                <p class="text-gray-600">GGSIPU | 9.143 SGPA</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">B.Sc in Instrumentation</h3>
+                <p class="text-gray-600">University of Delhi | 8.676 CGPA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-50">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-sm">
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-xl font-bold">Arti Kanwal</p>
+                    <p class="text-gray-400">Software Engineer & Data Analyst</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Arti Kanwal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
